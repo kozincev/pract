@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #5d5d5d;
+    color: white;
+}
+h1{
+    padding-left: 15vh;
+    padding-top: 5vh;
+    font-size: 45px;
+
+    
+}
+.first{
+    font-family: "Anybody", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.first__list{
+    padding-top: 5vh;
+    padding-left: 15vh;
+    text-align: left;
+    list-style: none;
+}
+.first__list__li{
+    margin-top: 2vh;
+}
+h2{
+    padding-left: 15vh;
+    padding-top: 9vh;
+    font-size: 45px;
+    
+}
+.second{
+    font-family: "Anybody", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.second__list{
+    padding-top: 5vh;
+    padding-left: 15vh;
+    text-align: left;
+    list-style: none;
+}
+.second__list__li{
+    margin-top: 2vh;
+}
+h3{
+    padding-left: 15vh;
+    padding-top: 9vh;
+    font-size: 45px;
+    
+}
+.third{
+    font-family: "Anybody", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.third__list{
+    padding-top: 5vh;
+    padding-left: 15vh;
+    text-align: left;
+    list-style-type: "- ";
+}
+.third__list__li{
+    margin-top: 2vh;
+}
+h4{
+    padding-left: 15vh;
+    padding-top: 9vh;
+    font-size: 45px;
+    
+}
+.fourth{
+    font-family: "Anybody", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+}
+.fourth__list{
+    padding-top: 5vh;
+    padding-left: 15vh;
+    text-align: left;
+    list-style-type: "- ";
+}
+.fourth__list__li{
+    margin-top: 2vh;
+}
+
+@media (max-width: 1629px) {
+
+        h1{
+            font-size: 30px;
+        }
+        .first{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        .second{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        .third{
+            font-size: 20px;
+        }
+        h4{
+            font-size: 30px;
+        }
+        .fourth{
+            font-size: 20px;
+        }
+    }
+    
+
+
+
+@media (max-width: 1000px) {
+    h1{
+        font-size: 30px;
+    }
+    .first{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .second{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .third{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    .fourth{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    h1{
+        font-size: 25px;
+    }
+    .first{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .second{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .third{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    .fourth{
+        font-size: 20px;
+    }
+}

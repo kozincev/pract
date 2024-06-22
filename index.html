@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__container">
+            
+
+            <nav class="header__nav">
+                
+                <ul class="header__list">
+                    <li><a href="." class="logo">Студия занятий</a></li>
+                    <li><a href="#kak__eto__rab" class="da" style="scroll-behavior: smooth;">Как это работает?</a></li>
+                    <li><a href="#contacts" class="da">Контакты</a></li>
+                    <li><a href="#section--3" class="da">Отзывы</a></li>
+                    <li class="number__header" style="padding-left: 5vh;"><img src="/imgs/значок телефона в хедере.png" alt=""><p>+7 777 777 77 77</p></li>
+                    <li class="button__login" style="padding-left: 5vh;"><img src="/imgs/значок для входа в навигации.png" alt=""> <button class="btn-open-popup" onclick="togglePopup()" style="text-align: center;"> 
+                      Вход 
+                      </button> 
+                  
+                    <div id="popupOverlay" 
+                         class="overlay-container"> 
+                        <div class="popup-box"> 
+                            <p style="color: rgb(0, 0, 0);">Войти</p> 
+                            <form class="form-container"> 
+                                <label class="form-label" 
+                                       for="name"> 
+                                       Введите Имя 
+                                  </label> 
+                                <input class="form-input" type="text" 
+                                       
+                                       id="name" name="name" required> 
+                  
+                                <label class="form-label" for="email">Введите почту</label> 
+                                <input class="form-input"
+                                       type="email" 
+                                       
+                                       id="email" 
+                                       name="email" required> 
+                  
+                                <button class="btn-submit" 
+                                        type="submit"> 
+                                  Войти 
+                                  </button> 
+                            </form> 
+                  
+                            <button class="btn-close-popup" 
+                                    onclick="togglePopup()"> 
+                              Закрыть 
+                              </button> 
+                        </div> 
+                    </div></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="container__1">
+            <h1>Мы найдем репетитора именно для вас!</h1>
+            <div class="input__container">
+              <div class="ui-widget">
+                <button value="Click" onclick="viewDiv1()">Английский язык</button>
+                <button value="Click" onclick="viewDiv2()">Математика</button>
+                <button value="Click" onclick="viewDiv3()">Русский язык</button>
+                <button value="Click" onclick="viewDiv4()">Физика</button>
+                <button value="Click" onclick="viewDiv5()">Химия</button>
+                <button value="Click" onclick="viewDiv6()">Биология</button>
+                <div class="div1" id="div1">
+                  <div class="div1_2">
+                  <img src="/imgs/репетитор пётр.png" alt="">
+                  <p>Пётр<br>
+                    Репетитор по Английскому языку
+                  </p>
+                  <div class="flag__country">
+                  <img src="/imgs/флаг репетиторов.png" alt="" class="flag">
+                  <p class="country">Калининград</p></div>
+                </div>
+                <p class="info__1">Краткая информация: <br>
+                  Образование : Неоконченное высшее, Новосибирский Государственный Университет.
+                  Моему подходу и стилю преподавания очень близка идеология психоанализа.
+                   Ключевыми для меня являются интересы и психология ученика, цели изучения и область применения языка, не степень моего знакомства с определенными учебными материалами. 
+                   Форма занятия с разными учениками у меня сильно различается.
+                    Предпочитаю использовать коммуникативную методику, когда основной целью является овладение живой устной речью с активной грамматикой и лексикой. </p>
+                    <button type="button" onclick="viewDiv1(alert('Вы добавили репетитора в заявку! Ожидайте ответа'))" class="info__1__btn">Добавить в заявку</button>
+                </div>
+
+
+
+
+
+
+                <div class="div2" id="div2">
+                  <div class="div1_2">
+                  <img src="/imgs/репетитор анастасия.png" alt="">
+                  <p>Анастасия<br>
+                    Репетитор по математике
+                  </p>
+                  <div class="flag__country">
+                  <img src="/imgs/флаг репетиторов.png" alt="" class="flag">
+                  <p class="country">Калининград</p></div>
+                </div>
+                <p class="info__2">Краткая информация: <br>
+                  Образование : Высшее, Днепропетровский государственный университет
+                  Более двадцати лет репетиторского стажа. 
+                  Занималась подготовкой учащихся в вузы, помогаю подтянуть текущую успеваемость, устранить пробелы в знаниях. 
+                  Качественно подготовлю к ОГЭ ( 25 заданий из 26- лучший результат) и ЕГЭ ( профиль задания 13-15, 17, 19) , 
+                  В своей работе репетитора учитываю , прежде всего , потребности и интересы ученика, как в краткосрочной так и в долгосрочной перспективе. 
+                  Работаю как со слабыми так и с сильными учащимися.  </p>
+                    <button type="button" onclick="viewDiv2(alert('Вы добавили репетитора в заявку! Ожидайте ответа'))" class="info__2__btn">Добавить в заявку</button>
+                </div>
+
+                
+
+
+                <div class="div3" id="div3">
+                  <div class="div3_2">
+                  <img src="/imgs/репетитор иван.png" alt="">
+                  <p>Иван<br>
+                    Репетитор по русскому языку
+                  </p>
+                  <div class="flag__country">
+                  <img src="/imgs/флаг репетиторов.png" alt="" class="flag">
+                  <p class="country">Калининград</p></div>
+                </div>
+                <p class="info__3">Краткая информация: <br>
+                  Образование : Высшее, МГТУ
+                  Успешная работа с учениками самого разного уровня. 
+                  Индивидуальный подход к каждому учащемуся. 
+                  Помощь школьникам в ликвидации пробелов в изучении предметов. 
+                  Подготовка к ОГЭ (ГИА) , ЕГЭ, в ВУЗ. Успешная помощь студентам. 
+                  Общителен, доброжелателен, в высшей степени стрессоустойчив в отношениях с учащимися, студентами и взрослыми, легко и быстро устанавливаю контакт с учеником любого возраста. </p>
+                    <button type="button" onclick="viewDiv3(alert('Вы добавили репетитора в заявку! Ожидайте ответа'))" class="info__3__btn">Добавить в заявку</button>
+                </div>
+
+
+
+
+                <div class="div4" id="div4">
+                  <div class="div4_2">
+                  <img src="/imgs/репетитор наталья.png" alt="">
+                  <p>Наталья<br>
+                    Репетитор по физике
+                  </p>
+                  <div class="flag__country">
+                  <img src="/imgs/флаг репетиторов.png" alt="" class="flag">
+                  <p class="country">Калининград</p></div>
+                </div>
+                <p class="info__4">Краткая информация: <br>
+                  Образование : Высшее, Новочеркасский ордена Трудового Красного Знамени политехнический институт им. Серго Орджоникидзе
+                  Устранение пробелов, подготовка к ГИА и ОГЭ по информатике и физике.
+                  Возможна подготовка к самостоятельным и контрольным работам по информатике и физике. 
+                  Помощь в разработке проектов, презентаций и написании рефератов, докладов. </p>
+                    <button type="button" onclick="viewDiv4(alert('Вы добавили репетитора в заявку! Ожидайте ответа'))" class="info__4__btn">Добавить в заявку</button>
+                </div>
+
+
+
+
+
+
+
+                <div class="div5" id="div5">
+                  <div class="div5_2">
+                  <img src="/imgs/репетитор татьяна.png" alt="">
+                  <p>Татьяна<br>
+                    Репетитор по химии
+                  </p>
+                  <div class="flag__country">
+                  <img src="/imgs/флаг репетиторов.png" alt="" class="flag">
+                  <p class="country">Калининград</p></div>
+                </div>
+                <p class="info__5">Краткая информация: <br>
+                  Образование : Высшее, МГОУ
+                  Помощь отстающим, неуспевающим, слабоуспевающим, улучшение текущей успеваемости, " подтягивание" с любого уровня, устранение пробелов в знаниях,
+                   разъяснение непонятного материала, подготовка к контрольным, самостоятельным, проверочным, лабораторным работам, выпускным экзаменам. 
+                   Разбор заданий ЕГЭ и ОГЭ (ГИА) от части А до части С. Доступное и понятное, подробное и интересное изложение материала по всем разделам школьной биологии и химии. </p>
+                    <button type="button" onclick="viewDiv5(alert('Вы добавили репетитора в заявку! Ожидайте ответа'))" class="info__5__btn">Добавить в заявку</button>
+                </div>
+
+
+
+
+
+
+
+                <div class="div6" id="div6">
+                  <div class="div6_2">
+                  <img src="/imgs/репетитор владимир.png" alt="">
+                  <p>Владимир<br>
+                    Репетитор по биологии
+                  </p><div class="flag__country">
+                  <img src="/imgs/флаг репетиторов.png" alt="" class="flag">
+                  <p class="country">Калининград</p></div>
+                </div>
+                <p class="info__6">Краткая информация: <br>
+                  Образование : Высшее, МГУ им. М. В. Ломоносова
+                  Основные результаты работы: всего, на конец августа 2023 года 176 учеников поступили в ВУЗы на бюджет. 
+                  Подготовлено 6 призеров и 8 абсолютных победителей Всероссийских олимпиад по биологии, из них 2 ученика стали призёрами заключительного этапа,
+                  остальные являются призёрами, а также абсолютными победителями муниципального и регионального этапов.
+                  5 учеников являются призёрами олимпиады " Ломоносов". 4 ученика являются призёрами Сеченовской олимпиады. </p>
+                    <button type="button" onclick="viewDiv6(alert('Вы добавили репетитора в заявку! Ожидайте ответа'))" class="info__6__btn">Добавить в заявку</button>
+                </div>
+
+
+
+
+              </div>
+            <p class="input__text">Стоимость услуг репетитора зависит от образования, квалификации, опыта работы преподавателя, а так же от Ваших потребностей. <br>
+                Стоимость подготовки к ЕГЭ, ОГЭ, олимпиаде с преподавателем по математике, английскому или другому предмету дороже, чем занятие по школьной программе. 
+                <br>Выбирая репетитора на сайте, вы можете воспользоваться удобной сортировкой по возрастанию или убыванию цены за урок, или выбирать из лучших популярных <br>преподавателей.</p>     
+        </div>
+        </div>
+        <div class="container__2">
+            <div class="recomendations">
+            <img src="/imgs/уникальная база репетиторов в хедере.png" alt="">
+            <p>Уникальная база репетиторов <br>
+            Более 185 500 опытных репетиторов по <br>
+            любому предмету на расстоянии клика</p>
+        </div>
+        <div class="recomendations__2">
+            <img src="/imgs/нам доверяют ученики в хедере.png" alt="">
+            <p>Нам доверяют ученики<br>
+            За 16 лет нам доверили поиск <br>
+             репетитора 1 177 200 учеников. 
+            </p>
+        </div>
+        </div>
+    </header>   
+    <main class="main" id="kak__eto__rab">
+        <div class="container__3">
+        <h2>Как это работает?</h2>
+    <div class="content__1">
+        <img src="/imgs/цифра 1(как это работает).png" alt="">
+        <p>Указываете предмет, который <br> 
+             требуется</p>
+        <img src="/imgs/указываете предмет(как это работает).png" alt="" class="predmet">
+    </div>
+    <img src="/imgs/линии(как это работает).png" alt="">
+    <div class="content__2">
+        <img src="/imgs/цифра 2(как это работает).png" alt="">
+         <img src="/imgs/выбираете преподавателя(как это работает).png" alt="" class="prepod">
+        <p>Выбираете преподавателя</p>
+    </div>
+    <img src="/imgs/линии(как это работает).png" alt="" class="line__2">
+    <div class="content__3">
+        <img src="/imgs/цифра 3(как это работает).png" alt=""> 
+        <p>После успешной подготовки оставляете положительный отзыв :)</p>
+        <img src="/imgs/положительный отзыв(как это работает).png" alt="" class="otziv">
+    </div>
+     
+       </div>
+    </main>
+
+    <section class="contact__section" id="contacts">
+        <h3>Контакты</h3>
+        <div class="container__4">
+            <div class="group__1">
+                <img src="/imgs/значок телефона в контактах.png" alt="">
+                <p><span>Контактный телефон</span> <br>
+                    +7 777 777-77-77
+                </p> 
+            </div>
+
+
+            <div class="group__1">
+                <img src="/imgs/почты в контактах.png" alt="">
+                <p><span>e-mail для учеников</span> <br>
+                    stoflessstudent@mail.ru
+                </p> 
+            </div>
+        </div>
+        <div class="container__5">
+            <div class="group__2">
+                <img src="/imgs/адрес в контактах.png" alt="">
+                <p><span>Адрес</span> <br>
+                    г.Калининград, какая-то улица д.20
+                </p> 
+            </div>
+
+            <div class="group__2">
+                <img src="/imgs/почты в контактах.png" alt="">
+                <p><span>e-mail для репетиторов</span> <br>
+                    stoflessteacher@mail.ru
+                </p> 
+            </div>
+        </div>
+
+        <div class="container__6">
+            <div class="group__3">
+                <img src="/imgs/часы в контактах.png" alt="">
+                <p><span>Время работы</span> <br>
+                    Ежедневно с 9:00 до 20:00
+                </p> 
+            </div>
+
+            <div class="group__3">
+                <img src="/imgs/почты в контактах.png" alt="">
+                <p><span>e-mail для отзывов</span> <br>
+                    stoflessfeedback@mail.ru
+                </p> 
+            </div>
+        </div>
+    </section>
+
+    <section class="section__reviews" id="section--3">
+        <h4>Отзывы</h4>
+  
+        <div class="slider">
+          <div class="slide slide--1">
+            <div class="testimonial">
+              <h5 class="testimonial__header">Огромное спасибо, Наталья, за ваш профессионализм и терпение!</h5>
+              <blockquote class="testimonial__text">
+                Я очень довольна результатами занятий по физике.
+                 Вы помогли мне разобраться в сложных темах и повысить мои оценки. 
+                 Благодаря вам я почувствовала себя увереннее в своих знаниях и перестала бояться экзаменов.
+                 Рекомендую имя репетитора всем, кто хочет получить качественное образование!
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="/imgs/значок человека(отзывы).png" alt="" class="testimonial__photo" />
+                <h6 class="testimonial__name">Морозова Елизавета Дмитриевна</h6>
+                <p class="testimonial__location">Калининград</p>
+              </address>
+            </div>
+          </div>
+  
+          <div class="slide slide--2">
+            <div class="testimonial">
+              <h5 class="testimonial__header">
+                Занятия, которые хочется посещать!
+              </h5>
+              <blockquote class="testimonial__text">
+                Занимаюсь с Татьяной уже несколько месяцев и очень рада, что нашла такого замечательного преподавателя.
+                  Он  очень доступно объясняет материал, умеет заинтересовать ученика и создать комфортную обстановку для обучения.
+                  Занятия проходят в очень динамичной и интересной форме, время пролетает незаметно. 
+                  Благодаря Татьяне у меня появилась настоящая страсть к химии! 
+
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="/imgs/значок человека(отзывы).png" alt="" class="testimonial__photo" />
+                <h6 class="testimonial__name">Смирнова Софья Павловна</h6>
+                <p class="testimonial__location">Калининград</p>
+              </address>
+            </div>
+          </div>
+  
+          <div class="slide slide--3">
+            <div class="testimonial">
+              <h5 class="testimonial__header">
+                Достижение цели благодаря профессионалу.
+              </h5>
+              <blockquote class="testimonial__text">
+                Я давно искал репетитора по английскому языку, который смог бы помочь мне подготовиться к экзамену или олимпиадам и наконец-то нашел его! 
+                Пётр - настоящий профессионал своего дела. Он обладает глубокими знаниями и умением их передать. 
+                Занятия проходят в максимально эффективной форме, и я уже вижу положительные результаты.  
+                Рекомендую Петра всем, кто хочет достичь отличных результатов
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="/imgs/значок человека(отзывы).png" alt="" class="testimonial__photo" />
+                <h6 class="testimonial__name">Беляев Филипп Кириллович</h6>
+                <p class="testimonial__location">Калининград</p>
+              </address>
+            </div>
+          </div>
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a href="http://127.0.0.1:5500" class="logo__2">Студия занятий</a>
+        <ul class="footer__list">
+          <li><a href="otzivifooter.html">Отзывы постоянных заказчиков</a></li>
+          <li><a href="infofooter.html">О компании</a></li>
+        </ul>
+        <div class="container__7">
+          <div class="footer__group">
+        <img src="/imgs/значок локации в футере.png" alt="" class="location"><p>Калининград</p>
+      </div>
+        <img src="/imgs/значок вк в футере.png" alt="" class="vk">
+        <p>+7 777 777-77-77</p>
+        </div>
+      </footer>
+    <script src="js.js"></script>
+</body>
+</html>
